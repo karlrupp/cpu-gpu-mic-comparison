@@ -1,0 +1,15 @@
+# Data of high-end single precision NVIDIA GPUs over the last years
+# Collected by Karl Rupp
+# Details and discussion at 
+# http://www.karlrupp.net/2013/06/cpu-gpu-and-mic-hardware-characteristics-over-time/
+#
+#Year   GFLOPs  Pixel-Shader   Mem-BW   TDP   Labels (later columns are used to get labels in figures right)
+2007    624        128           62     135   "GeForce 8800 GTS"  "Radeon HD 3870"    "Radeon HD 3870"         "GeForce 8800 GTS" "Radeon HD 3870"         "GeForce 8800 GTS"  "Radeon HD 3870"
+2008    933        240          142     236   "GeForce GTX 280"   "GeForce GTX 280"   "GeForce GTX 280"        "GeForce GTX 280"  "GeForce GTX 280"        "GeForce GTX 280"   "GeForce GTX 280"
+2009    1062       240          159     204   "GeForce GTX 285"   "GeForce GTX 285"   "GeForce GTX 285"        "GeForce GTX 285"  "GeForce GTX 285"        "Radeon HD 5870"   "GeForce GTX 285"
+2010    1581       512          177     244   "GeForce GTX 580"   "GeForce GTX 580"   "GeForce GTX 580"        "GeForce GTX 580"  "GeForce GTX 580"        "Radeon HD 6970"   "GeForce GTX 580"
+2011    1581       512          192     244   "GeForce GTX 580"   "GeForce GTX 580"   "GeForce GTX 580"        "GeForce GTX 580"  "GeForce GTX 580"        "Radeon HD 6970"   "GeForce GTX 580"
+2012    3090      1536          192     195   "GeForce GTX 680"   "GeForce GTX 680"   "Radeon HD 7970 GHz Ed." "GeForce GTX 680"  "Radeon HD 7970 GHz Ed." "GeForce GTX 680"   "GeForce GTX 680"
+2013    4500      2688          288     250   "GeForce GTX Titan" "Radeon HD 8970"    "GeForce GTX Titan"      "Radeon HD 8970"   "Radeon HD 8970"         "GeForce GTX Titan" "GeForce GTX Titan"
+2014    5364      2880          288     235   "Tesla K40"         "FirePro W9100"     "FirePro W9100"              "FirePro W9100"    "FirePro W9100"              "Tesla K40" "Tesla K40"
+

@@ -1,0 +1,15 @@
+# Data of high-end double precision NVIDIA GPUs over the last years
+# Collected by Karl Rupp
+# Details and discussion at 
+# http://www.karlrupp.net/2013/06/cpu-gpu-and-mic-hardware-characteristics-over-time/
+#
+#Year   GFLOPs   Pixel-Shader   Mem-BW     TDP   Labels (later columns are used to get labels in figures right)
+2007       -         -            -         -    "-"           "-"            "-"
+2008      78        240           102      188   "Tesla C1060" "Tesla C1060"            "Tesla C1060"
+2009      78        240           102      188   "Tesla C1060" "Tesla C1060"            "Tesla C1060"
+2010     515        448           144      238   "Tesla C2050" "Tesla C2050"            "Tesla C2050" 
+2011     666        512           177      250   "Tesla C2090" "Tesla C2090"            "Tesla C2090"
+2012    1173        832           208      225   "Tesla K20"   "Radeon HD 7970 GHz Ed." "Radeon HD 7970 GHz Ed."
+2013    1312        896           250      250   "Tesla K20X"  "Tesla K20X"             "Radeon HD 8970"
+2014    1430        960           288      235   "Tesla K40"   "Tesla K40"              "Tesla K40"
+

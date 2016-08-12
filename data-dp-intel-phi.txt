@@ -1,0 +1,8 @@
+# Data of high-end double precision Intel Accelerators over the last years
+# Collected by Karl Rupp
+# Details and discussion at 
+# http://www.karlrupp.net/2013/06/cpu-gpu-and-mic-hardware-characteristics-over-time/
+#
+#Year   GFLOPs  Cores    Mem-BW/Socket  TDP   Labels
+2013    1208    61       220            300   "Xeon Phi X7120X" "Xeon Phi X7120X"
+

@@ -1,0 +1,15 @@
+# Data of high-end single precision Intel CPUs over the last years
+# Collected by Karl Rupp
+# Details and discussion at 
+# http://www.karlrupp.net/2013/06/cpu-gpu-and-mic-hardware-characteristics-over-time/
+#
+#Year   GFLOPs Cores   Mem-BW/Socket  TDP   Labels
+2007    102     4         26          150   "Xeon X5482"
+2008    109     4         26          150   "Xeon X5492"
+2009    106     4         32          130   "Xeon W5590"
+2010    160     6         32          130   "Xeon X5680"
+2011    166     6         32          130   "Xeon X5690"
+2012    371     8         51          135   "Xeon E5-2690"
+2013    518    12         60          130   "Xeon E5-2697 v2" "Xeon E5-2697 v2"
+2014   1324    18         68          145   "Xeon E5-2699 v3" "Xeon E5-2699 v3"
+
