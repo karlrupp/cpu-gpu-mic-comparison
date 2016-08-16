@@ -1,0 +1,16 @@
+# Data of high-end double precision AMD GPUs over the last years
+# Collected by Karl Rupp
+# Details and discussion at 
+# http://www.karlrupp.net/2013/06/cpu-gpu-and-mic-hardware-characteristics-over-time/
+#
+#Year  GFLOPs-SP  GFLOPs-DP  Pixel-Shader  Mem-BW  TDP  CUs    Name
+2007      496         99       320           72    106    4    "Radeon HD 3870"
+2008     1200        240       800          115    150   10    "Radeon HD 4870"
+2009     2720        544      1600          154    228   20    "Radeon HD 5870"
+2010     2703        675      1536          176    250   24    "Radeon HD 6970"
+2011     2703        675      1536          176    250   24    "Radeon HD 6970"
+2012     4096       1024      2048          288    250   32    "Radeon HD 7970 GHz Ed."
+2013     4300       1075      2048          288    250   40    "Radeon HD 8970"
+2014     5238       2619      2816          320    275   44    "FirePro W9100"
+2015     5240       2620      2816          320    275   44    "FirePro S9170"
+

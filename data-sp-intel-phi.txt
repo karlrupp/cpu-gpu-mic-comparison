@@ -1,9 +1,0 @@
-# Data of high-end single precision Intel Accelerators over the last years
-# Collected by Karl Rupp
-# Details and discussion at 
-# http://www.karlrupp.net/2013/06/cpu-gpu-and-mic-hardware-characteristics-over-time/
-#
-#Year   GFLOPs Cores   Mem-BW/Socket  TDP   Labels (later columns are used to get labels in figures right)
-2013    2416   61      220            300   "Xeon Phi X7120X" "Xeon Phi X7120X" "Radeon HD 8970"
-
-
