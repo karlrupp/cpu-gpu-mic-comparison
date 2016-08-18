@@ -16,7 +16,7 @@ set logscale y
 set format y "10^{%L}"
 set xrange [2006.4:2016.6]
 set key samplen 6 spacing 3.0
-set key top left Left reverse
+set key bottom right
 set grid lw 3
 set ylabel "GFLOP/sec"
 set xlabel "End of Year"
@@ -34,7 +34,7 @@ set label "HD 6970"         at 2011,4000 center rotate by 40 textcolor rgb "#971
 set label "HD 7970 GHz Ed." at 2012,6000 center rotate by 40 textcolor rgb "#971c00"
 set label "HD 8970"         at 2013,3300 center rotate by 20 textcolor rgb "#971c00"
 set label "FirePro W9100"   at 2014,3700 center rotate by 20 textcolor rgb "#971c00"
-set label "FirePro S9150"   at 2015,3900 center rotate by 20 textcolor rgb "#971c00"
+set label "FirePro S9150"   at 2015,4000 center rotate by 20 textcolor rgb "#971c00"
 
 # Labels Intel
 set label "X5482"      at 2007,80   center rotate by 40 textcolor rgb "#005197"
@@ -65,10 +65,10 @@ set label "Xeon Phi 7120 (KNC)" at 2014,1900 center rotate by 00
 set label "Xeon Phi 7290 (KNL)" at 2016,5000 center rotate by 48
 
 
-plot 'data-intel.txt'     using 1:2 with linesp pt 9 ps 3.0 title "Xeon CPUs, Intel", \
-     'data-sp-nvidia.txt' using 1:2 with linesp pt 5 ps 3.0 title "GeForce GPUs, NVIDIA", \
-     'data-amd.txt'       using 1:2 with linesp pt 7 ps 3.0 title "Radeon GPUs, AMD", \
-     'data-intel-phi.txt' using 1:2 with linesp pt 11 ps 3.0 title "Xeon Phis, Intel"
+plot 'data-intel.txt'     using 1:2 with linesp pt 9 ps 3.0 title "INTEL Xeon CPUs", \
+     'data-sp-nvidia.txt' using 1:2 with linesp pt 5 ps 3.0 title "NVIDIA GeForce GPUs", \
+     'data-amd.txt'       using 1:2 with linesp pt 7 ps 3.0 title "AMD Radeon GPUs", \
+     'data-intel-phi.txt' using 1:2 with linesp pt 11 ps 3.0 title "INTEL Xeon Phis"
 
 set yrange [30:10000]
 set output "gflops-dp.eps"
@@ -117,7 +117,7 @@ set label "Xeon Phi 7290 (KNL)" at 2016,2700 center rotate by 50
 
 
 
-plot 'data-intel.txt'     using 1:3 with linesp pt  9 ps 3.0 title "Xeon CPUs, Intel", \
-     'data-dp-nvidia.txt' using 1:2 with linesp pt  5 ps 3.0 title "Tesla GPUs, NVIDIA", \
-     'data-amd.txt'       using 1:3 with linesp pt  7 ps 3.0 title "Radeon GPUs, AMD", \
-     'data-intel-phi.txt' using 1:3 with linesp pt 11 ps 3.0 title "Xeon Phis, Intel"
+plot 'data-intel.txt'     using 1:3 with linesp pt  9 ps 3.0 title "INTEL Xeon CPUs", \
+     'data-dp-nvidia.txt' using 1:2 with linesp pt  5 ps 3.0 title "NVIDIA Tesla GPUs", \
+     'data-amd.txt'       using 1:3 with linesp pt  7 ps 3.0 title "AMD Radeon GPUs", \
+     'data-intel-phi.txt' using 1:3 with linesp pt 11 ps 3.0 title "INTEL Xeon Phis"

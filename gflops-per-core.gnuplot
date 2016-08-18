@@ -52,12 +52,12 @@ set label "E5-2699 v4" at 2016,55 center rotate by 30 textcolor rgb "#005197"
 set label "8800 GTS"       at 2007,50 center rotate by 30 textcolor rgb "#00D317"
 set label "GTX 280"        at 2008,45  center rotate by 30 textcolor rgb "#00D317"
 set label "GTX 285"        at 2009,50  center rotate by 30 textcolor rgb "#00D317"
-set label "GTX 580"        at 2010,75 center rotate by 30 textcolor rgb "#00D317"
-set label "GTX 580"        at 2011,75 center rotate by 30 textcolor rgb "#00D317"
+set label "GTX 580"        at 2010,73 center rotate by 30 textcolor rgb "#00D317"
+set label "GTX 580"        at 2011,73 center rotate by 30 textcolor rgb "#00D317"
 set label "GTX 680"        at 2012,500 center rotate by 30 textcolor rgb "#00D317"
 set label "GTX Titan"      at 2013,450 center rotate by 30 textcolor rgb "#00D317"
 set label "Tesla K40"      at 2014,450  center rotate by 30 textcolor rgb "#00D317"
-set label "GTX Titan X"    at 2015,400 center rotate by 30 textcolor rgb "#00D317"
+set label "GTX Titan X"    at 2015,380 center rotate by 30 textcolor rgb "#00D317"
 set label "NVIDIA Titan X" at 2016,300 center rotate by 30 textcolor rgb "#00D317"
 
 # Labels Xeon Phi
@@ -65,13 +65,12 @@ set label "Xeon Phi 7120 (KNC)" at 2014.4,32 center rotate by 00
 set label "Xeon Phi 7290 (KNL)" at 2016,122 center rotate by 55
 
 
-plot 'data-intel.txt'     using 1:($2/$4)         with linesp pt 9 ps 3.0 title "Xeon CPUs, Intel", \
-     'data-sp-nvidia.txt' using 1:($2/$6)         with linesp pt 5 ps 3.0 title "GeForce GPUs, NVIDIA", \
-     'data-amd.txt'       using 1:($2/$7)         with linesp pt 7 ps 3.0 title "Radeon GPUs, AMD", \
-     'data-intel-phi.txt' using 1:($2/$4)         with linesp pt 11 ps 3.0 title "Xeon Phis, Intel"
+plot 'data-intel.txt'     using 1:($2/$4)         with linesp pt 9 ps 3.0 title "INTEL Xeon CPUs", \
+     'data-sp-nvidia.txt' using 1:($2/$6)         with linesp pt 5 ps 3.0 title "NVIDIA GeForce GPUs", \
+     'data-amd.txt'       using 1:($2/$7)         with linesp pt 7 ps 3.0 title "AMD Radeon GPUs", \
+     'data-intel-phi.txt' using 1:($2/$4)         with linesp pt 11 ps 3.0 title "INTEL Xeon Phis"
  
 set yrange [1:1000]
-set key top left Left reverse
 set output "gflops-per-core-dp.eps"
 set title "Theoretical Peak Performance per Core/Multiprocessor, Double Precision"
 
@@ -116,8 +115,8 @@ set label "Xeon Phi 7290 (KNL)" at 2016,25 center rotate by 45
 
 
 
-plot 'data-intel.txt'     using 1:($3/$4) with linesp pt 9 ps 3.0 title "Xeon CPUs, Intel", \
-     'data-dp-nvidia.txt' using 1:($2/$6) with linesp pt 5 ps 3.0 title "Tesla GPUs, NVIDIA", \
-     'data-amd.txt'       using 1:($3/$7) with linesp pt 7 ps 3.0 title "Radeon GPUs, AMD", \
-     'data-intel-phi.txt' using 1:($3/$4) with linesp pt 11 ps 3.0 title "Xeon Phis, Intel"
+plot 'data-intel.txt'     using 1:($3/$4) with linesp pt 9 ps 3.0 title "INTEL Xeon CPUs", \
+     'data-dp-nvidia.txt' using 1:($2/$6) with linesp pt 5 ps 3.0 title "NVIDIA Tesla GPUs", \
+     'data-amd.txt'       using 1:($3/$7) with linesp pt 7 ps 3.0 title "AMD Radeon GPUs", \
+     'data-intel-phi.txt' using 1:($3/$4) with linesp pt 11 ps 3.0 title "INTEL Xeon Phis"
 

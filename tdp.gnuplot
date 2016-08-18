@@ -14,7 +14,7 @@ set border linewidth 1.5
 
 set xrange [2006.4:2016.6]
 set key samplen 6 spacing 3.0
-set key bottom right Left reverse
+set key bottom right
 set grid lw 3
 set ylabel "Watt"
 set xlabel "End of Year"
@@ -61,9 +61,9 @@ set label "Tesla P100"   at 2016.2,275 center rotate by 30 textcolor rgb "#00D31
 set label "Xeon Phi 7120 (KNC)" at 2014,310 center rotate by 00
 set label "Xeon Phi 7290 (KNL)" at 2015.8,225 center rotate by 30
 
-plot 'data-intel.txt'     using 1:6 with linesp pt  9 ps 3.0 title "Xeon CPUs, Intel", \
-     'data-dp-nvidia.txt' using 1:5 with linesp pt  5 ps 3.0 title "Tesla GPUs, NVIDIA", \
-     'data-amd.txt'       using 1:6 with linesp pt  7 ps 3.0 title "Radeon GPUs, AMD", \
-     'data-intel-phi.txt' using 1:6 with linesp pt 11 ps 3.0 title "Xeon Phis, Intel"
+plot 'data-intel.txt'     using 1:6 with linesp pt  9 ps 3.0 title "INTEL Xeon CPUs", \
+     'data-dp-nvidia.txt' using 1:5 with linesp pt  5 ps 3.0 title "NVIDIA Tesla GPUs", \
+     'data-amd.txt'       using 1:6 with linesp pt  7 ps 3.0 title "AMD Radeon GPUs", \
+     'data-intel-phi.txt' using 1:6 with linesp pt 11 ps 3.0 title "INTEL Xeon Phis"
 
 

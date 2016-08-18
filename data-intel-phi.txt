@@ -3,9 +3,9 @@
 # Details and discussion at 
 # http://www.karlrupp.net/2013/06/cpu-gpu-and-mic-hardware-characteristics-over-time/
 #
-#Year   GFLOPs-SP   GFLOPs-DP  Cores    Mem-BW/Socket  TDP   Labels
-2013      2416        1208      61       220            300   "Xeon Phi 7120 (KNC)"
-2014      2416        1208      61       220            300   "Xeon Phi 7120 (KNC)"
-2015      2416        1208      61       220            300   "Xeon Phi 7120 (KNC)"
-2016      6912        3456      72       480            245   "Xeon Phi 7290 (KNL)"
+#Year   MFLOPs-SP   MFLOPs-DP  Cores    Mem-BW/Socket   TDP   Freq(MHz)  Name
+2013      2416        1208      61       220            300   1238       "Xeon Phi 7120 (KNC)"
+2014      2416        1208      61       220            300   1238       "Xeon Phi 7120 (KNC)"
+2015      2416        1208      61       220            300   1238       "Xeon Phi 7120 (KNC)"
+2016      6912        3456      72       600            245   1500       "Xeon Phi 7290 (KNL)"   # Theoretical Mem-BW Peak estimated by assuming 80 percent of peak achieved in STREAM benchmark (approx. 500 GB/sec)
 

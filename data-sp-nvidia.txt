@@ -3,15 +3,15 @@
 # Details and discussion at 
 # http://www.karlrupp.net/2013/06/cpu-gpu-and-mic-hardware-characteristics-over-time/
 #
-#Year   GFLOPs  Pixel-Shader   Mem-BW   TDP   CUs  Labels
-2007    624        128           62     135   16   "GeForce 8800 GTS"
-2008    933        240          142     236   30   "GeForce GTX 280"
-2009    1062       240          159     204   30   "GeForce GTX 285"
-2010    1581       512          177     244   16   "GeForce GTX 580"
-2011    1581       512          192     244   16   "GeForce GTX 580"
-2012    3090      1536          192     195    8   "GeForce GTX 680"
-2013    4500      2688          288     250   14   "GeForce GTX Titan"
-2014    5364      2880          288     235   15   "Tesla K40"
-2015    6144      3072          336     250   24   "GeForce GTX Titan X"
-2016   10157      3584          480     250   54   "NVIDIA Titan X"
+#Year   GFLOPs  Pixel-Shader   Mem-BW   TDP   CUs  Freq(MHz)   Name
+2007    624        128           62     135   16   513         "GeForce 8800 GTS"
+2008    933        240          142     236   30   602         "GeForce GTX 280"
+2009    1062       240          159     204   30   648         "GeForce GTX 285"
+2010    1581       512          177     244   16   772         "GeForce GTX 580"
+2011    1581       512          192     244   16   772         "GeForce GTX 580"
+2012    3090      1536          192     195    8   1006        "GeForce GTX 680"
+2013    4500      2688          288     250   14   837         "GeForce GTX Titan"
+2014    5364      2880          288     235   15   745         "Tesla K40"
+2015    6144      3072          336     250   24   1000        "GeForce GTX Titan X"
+2016   10157      3584          480     250   54   1417        "NVIDIA Titan X"
 

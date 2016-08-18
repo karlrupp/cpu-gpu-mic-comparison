@@ -3,14 +3,14 @@
 # Details and discussion at 
 # http://www.karlrupp.net/2013/06/cpu-gpu-and-mic-hardware-characteristics-over-time/
 #
-#Year   GFLOPs   Pixel-Shader   Mem-BW     TDP   SMs  Labels 
-2008      78        240           102      188   30   "Tesla C1060"
-2009      78        240           102      188   30   "Tesla C1060"
-2010     515        448           144      238   14   "Tesla C2050"
-2011     666        512           177      250   16   "Tesla M2090"
-2012    1173       2496           208      225   13   "Tesla K20"
-2013    1312       2688           250      250   14   "Tesla K20X"
-2014    1430       2880           288      235   15   "Tesla K40"
-2015    1430       2880           288      235   15   "Tesla K40"
-2016    4700       3584           720      250   56   "Tesla P100"
+#Year   GFLOPs   Pixel-Shader   Mem-BW     TDP   SMs  Freq(MHz)   Name 
+2008      78        240           102      188   30   1296        "Tesla C1060"
+2009      78        240           102      188   30   1296        "Tesla C1060"
+2010     515        448           144      238   14   1150        "Tesla C2050"
+2011     666        512           177      250   16   1300        "Tesla M2090"
+2012    1173       2496           208      225   13   706         "Tesla K20"
+2013    1312       2688           250      250   14   732         "Tesla K20X"
+2014    1430       2880           288      235   15   745         "Tesla K40"
+2015    1430       2880           288      235   15   745         "Tesla K40"
+2016    4700       3584           720      250   56   1328        "Tesla P100"
 

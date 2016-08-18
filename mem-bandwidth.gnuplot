@@ -16,14 +16,14 @@ set logscale y
 set format y "10^{%L}"
 set xrange [2006.4:2016.6]
 set key samplen 6 spacing 3.0
-set key top left Left reverse
+set key bottom right
 set grid lw 3
 set ylabel "GB/sec"
 set xlabel "End of Year"
 
 set yrange [10:1000]
 set output "mem-bw.eps"
-set title "Peak Memory Bandwidth Comparison"
+set title "Theoretical Peak Memory Bandwidth Comparison"
 
 # Labels AMD
 set label "HD 3870"         at 2007,90 center rotate by 30 textcolor rgb "#971c00"
@@ -60,11 +60,11 @@ set label "Tesla P100"   at 2016,850 center rotate by 00 textcolor rgb "#00D317"
 
 # Labels Xeon Phi
 set label "Xeon Phi 7120 (KNC)" at 2014,190 center rotate by 00
-set label "Xeon Phi 7290 (KNL)" at 2016,400 center rotate by 50
+set label "Xeon Phi 7290 (KNL)" at 2016,450 center rotate by 55
 
-plot 'data-intel.txt'     using 1:5 with linesp pt  9 ps 3.0 title "Xeon CPUs, Intel", \
-     'data-dp-nvidia.txt' using 1:4 with linesp pt  5 ps 3.0 title "Tesla GPUs, NVIDIA", \
-     'data-amd.txt'       using 1:5 with linesp pt  7 ps 3.0 title "Radeon GPUs, AMD", \
-     'data-intel-phi.txt' using 1:5 with linesp pt 11 ps 3.0 title "Xeon Phis, Intel"
+plot 'data-intel.txt'     using 1:5 with linesp pt  9 ps 3.0 title "INTEL Xeon CPUs", \
+     'data-dp-nvidia.txt' using 1:4 with linesp pt  5 ps 3.0 title "NVIDIA Tesla GPUs", \
+     'data-amd.txt'       using 1:5 with linesp pt  7 ps 3.0 title "AMD Radeon GPUs", \
+     'data-intel-phi.txt' using 1:5 with linesp pt 11 ps 3.0 title "INTEL Xeon Phis"
 
 
