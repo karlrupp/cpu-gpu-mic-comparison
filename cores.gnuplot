@@ -1,6 +1,6 @@
 #!/usr/bin/gnuplot
 
-set term postscript eps enhanced
+set term postscript eps enhanced color
 
 set style data lines
 set style line 1  linetype -1 linewidth 3 lc rgb "#005197"
