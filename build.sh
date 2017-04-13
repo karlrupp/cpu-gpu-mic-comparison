@@ -5,7 +5,6 @@ for f in `ls *.gnuplot`
 do
   gnuplot $f;
 done;
-echo $1
 
 while :
 do
