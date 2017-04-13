@@ -3,20 +3,11 @@
 This is the data repository supplementing my blog post comparing hardware characteristics of CPUs, GPUs, and MICs:
 https://www.karlrupp.net/2013/06/cpu-gpu-and-mic-hardware-characteristics-over-time/
 
-
 ### Replot the Figures: 
- - Linux: Run build.sh from your terminal (assuming Gnuplot is available on your system).
-   
-   Requires: Gnuplot, ImageMagick.
-   
-   If no ImageMagick is available at your machine, comment/remove the second for-loop in build.sh
-   
-   If you want to have .eps plots instead of .png, comment/remove the second for-loop in build.sh
-   
-   To generate .pdf plots from .eps, use 'epstopdf' instead of 'convert -density 200' in the second for-loop in build.sh
-   
-   
- - Mac OS: Same as Linux (untested)
+
+ - Linux, MacOS: Run `build.sh` from your terminal (Gnuplot is required) – `./build.sh`. EPS figures are generated.
+   * Call `./build.sh --png` to convert the EPS figures into PNG pictures. ImageMagick needs to be installed for this.
+   * Call `./build.sh --pdf` to convert the EPS figures into PDF graphics. `epstopdf` (from a LaTeX installation) is used for this.
  
  - Windows: Install gnuplot, then load the *.gnuplot files to recreate the figures (untested). You may need to install postscript or change the Gnuplot terminal to png.
 
