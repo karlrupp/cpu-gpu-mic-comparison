@@ -11,7 +11,7 @@ https://www.karlrupp.net/2013/06/cpu-gpu-and-mic-hardware-characteristics-over-t
  
  - Windows: Install gnuplot, then load the *.gnuplot files to recreate the figures (untested). You may need to install postscript or change the Gnuplot terminal to png.
 
-ImageMagick changed it's security policy. You may need to enable EPS or PDF in the policy file.
+ImageMagick changed its security policy. You may need to enable EPS or PDF in the policy file.
 
 ### License
 
