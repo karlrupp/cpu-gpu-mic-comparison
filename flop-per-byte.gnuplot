@@ -13,7 +13,7 @@ set size 1.40,1.30
 set border linewidth 1.5
 
 set logscale y
-set xrange [2006.4:2018.6]
+set xrange [2006.4:2021.6]
 set key samplen 6 spacing 3.0
 set key bottom right
 set grid lw 3
@@ -37,20 +37,23 @@ set label "FirePro W9100"   at 2014,13.5 center rotate by 30 textcolor rgb "#971
 set label "FirePro S9150"   at 2015,14 center rotate by 30 textcolor rgb "#971c00"
 set label "MI25"            at 2016,33 center rotate by 30 textcolor rgb "#971c00"
 set label "MI60"            at 2018,12 center rotate by 30 textcolor rgb "#971c00"
+set label "MI250"           at 2021,11 center rotate by 30 textcolor rgb "#971c00"
 
 # Labels Intel
-set label "X5482"         at 2007,3.3 center rotate by 30 textcolor rgb "#005197"
-set label "X5492"         at 2008,3.5 center rotate by 30 textcolor rgb "#005197"
-set label "W5590"         at 2009,2.8 center rotate by 30 textcolor rgb "#005197"
-set label "X5680"         at 2010,4 center rotate by 30 textcolor rgb "#005197"
-set label "X5690"         at 2011,4.5 center rotate by 30 textcolor rgb "#005197"
-set label "E5-2690"       at 2012,6 center rotate by 30 textcolor rgb "#005197"
-set label "E5-2697 v2"    at 2013,7 center rotate by 30 textcolor rgb "#005197"
-set label "E5-2699 v3"    at 2014,28 center rotate by 30 textcolor rgb "#005197"
-set label "E5-2699 v3"    at 2015,30  center rotate by 30 textcolor rgb "#005197"
-set label "E5-2699 v4"    at 2016,15 center rotate by 30 textcolor rgb "#005197"
-set label "Platinum 8180" at 2017,47 center rotate by 30 textcolor rgb "#005197"
-set label "Platinum 9282" at 2018,43 center rotate by 30 textcolor rgb "#005197"
+set label "X5482"             at 2007,3.3 center rotate by 30 textcolor rgb "#005197"
+set label "X5492"             at 2008,3.5 center rotate by 30 textcolor rgb "#005197"
+set label "W5590"             at 2009,2.8 center rotate by 30 textcolor rgb "#005197"
+set label "X5680"             at 2010,4 center rotate by 30 textcolor rgb "#005197"
+set label "X5690"             at 2011,4.5 center rotate by 30 textcolor rgb "#005197"
+set label "E5-2690"           at 2012,6 center rotate by 30 textcolor rgb "#005197"
+set label "E5-2697 v2"        at 2013,7 center rotate by 30 textcolor rgb "#005197"
+set label "E5-2699 v3"        at 2014,28 center rotate by 30 textcolor rgb "#005197"
+set label "E5-2699 v3"        at 2015,30  center rotate by 30 textcolor rgb "#005197"
+set label "E5-2699 v4"        at 2016,15 center rotate by 30 textcolor rgb "#005197"
+set label "Platinum 8180"     at 2017,45 center rotate by 30 textcolor rgb "#005197"
+set label "Platinum 9282"     at 2018,60 center rotate by 0 textcolor rgb "#005197"
+set label "Platinum 8380HL"   at 2020,62 center rotate by 0 textcolor rgb "#005197"
+set label "Platinum 8380"     at 2021,40 center rotate by 00 textcolor rgb "#005197"
 
 # Labels NVIDIA
 set label "8800 GTS"       at 2007,12 center rotate by 30 textcolor rgb "#00D317"
@@ -65,6 +68,8 @@ set label "GTX Titan X"    at 2015,25 center rotate by 30 textcolor rgb "#00D317
 set label "Titan X"        at 2016,17 center rotate by 30 textcolor rgb "#00D317"
 set label "Titan V"        at 2017,28 center rotate by 30 textcolor rgb "#00D317"
 set label "Titan RTX"      at 2018,30 center rotate by 30 textcolor rgb "#00D317"
+set label "RTX 3090"       at 2020,30 center rotate by 30 textcolor rgb "#00D317"
+
 
 # Labels Xeon Phi
 set label "Xeon Phi 7120 (KNC)" at 2014.2,9.5 center rotate by 00
@@ -92,22 +97,26 @@ set label "HD 7970 GHz Ed." at 2012,2.8 center rotate by 30 textcolor rgb "#971c
 set label "HD 8970"         at 2013,3   center rotate by 30 textcolor rgb "#971c00"
 set label "FirePro W9100"   at 2014,12  center rotate by 30 textcolor rgb "#971c00"
 set label "FirePro S9150"   at 2015,13  center rotate by 30 textcolor rgb "#971c00"
-set label "MI25"            at 2016,2.8  center rotate by 30 textcolor rgb "#971c00"
+set label "MI25"            at 2016,1.5  center rotate by 30 textcolor rgb "#971c00"
 set label "MI60"            at 2018,9  center rotate by 30 textcolor rgb "#971c00"
+set label "MI250"           at 2021,11 center rotate by 30 textcolor rgb "#971c00"
+
 
 # Labels Intel
-set label "X5482"         at 2007,2.5 center rotate by 30 textcolor rgb "#005197"
-set label "X5492"         at 2008,2.5 center rotate by 30 textcolor rgb "#005197"
-set label "W5590"         at 2009,2   center rotate by 30 textcolor rgb "#005197"
-set label "X5680"         at 2010,2   center rotate by 30 textcolor rgb "#005197"
-set label "X5690"         at 2011,2.2 center rotate by 30 textcolor rgb "#005197"
-set label "E5-2690"       at 2012,4.5 center rotate by 30 textcolor rgb "#005197"
-set label "E5-2697 v2"    at 2013,7   center rotate by 30 textcolor rgb "#005197"
-set label "E5-2699 v3"    at 2014,14  center rotate by 30 textcolor rgb "#005197"
-set label "E5-2699 v3"    at 2015,15  center rotate by 30 textcolor rgb "#005197"
-set label "E5-2699 v4"    at 2016,14  center rotate by 30 textcolor rgb "#005197"
-set label "Platinum 8180" at 2017,14 center rotate by 30 textcolor rgb "#005197"
-set label "Platinum 9282" at 2018,21 center rotate by 30 textcolor rgb "#005197"
+set label "X5482"             at 2007,2.5 center rotate by 30 textcolor rgb "#005197"
+set label "X5492"             at 2008,2.5 center rotate by 30 textcolor rgb "#005197"
+set label "W5590"             at 2009,2   center rotate by 30 textcolor rgb "#005197"
+set label "X5680"             at 2010,2   center rotate by 30 textcolor rgb "#005197"
+set label "X5690"             at 2011,2.2 center rotate by 30 textcolor rgb "#005197"
+set label "E5-2690"           at 2012,4.5 center rotate by 30 textcolor rgb "#005197"
+set label "E5-2697 v2"        at 2013,7   center rotate by 30 textcolor rgb "#005197"
+set label "E5-2699 v3"        at 2014,14  center rotate by 30 textcolor rgb "#005197"
+set label "E5-2699 v3"        at 2015,15  center rotate by 30 textcolor rgb "#005197"
+set label "E5-2699 v4"        at 2016,14  center rotate by 30 textcolor rgb "#005197"
+set label "Platinum 8180"     at 2017,14 center rotate by 30 textcolor rgb "#005197"
+set label "Platinum 9282"     at 2018,21 center rotate by 30 textcolor rgb "#005197"
+set label "Platinum 8380HL"   at 2020,23 center rotate by 0 textcolor rgb "#005197"
+set label "Platinum 8380"     at 2021,19 center rotate by 30 textcolor rgb "#005197"
 
 # Labels NVIDIA
 set label "Tesla C1060"  at 2008,0.6  center rotate by 30 textcolor rgb "#00D317"
@@ -120,6 +129,7 @@ set label "Tesla K40"    at 2014,4 center rotate by 30 textcolor rgb "#00D317"
 set label "Tesla K40"    at 2015,4 center rotate by 30 textcolor rgb "#00D317"
 set label "Tesla P100"   at 2016,8 center rotate by 30 textcolor rgb "#00D317"
 set label "Tesla V100"   at 2017,10.5 center rotate by 30 textcolor rgb "#00D317"
+set label "Tesla A100"   at 2020,7.3 center rotate by 0 textcolor rgb "#00D317"
 
 # Labels Xeon Phi
 set label "Xeon Phi 7120 (KNC)" at 2014.4,6 center rotate by 00
