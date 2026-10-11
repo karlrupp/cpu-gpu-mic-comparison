@@ -3,18 +3,18 @@
 set term postscript eps enhanced color
 
 set style data lines
-set style line 1  linetype -1 linewidth 3 lc rgb "#005197"
-set style line 2  linetype -1 linewidth 3 lc rgb "#00D317"
-set style line 3  linetype -1 linewidth 3 lc rgb "#971c00"
-set style line 4  linetype -1 linewidth 3 lc rgb "#000000"
-set style increment user
+set linetype 1 lw 3 lc rgb "#005197"
+set linetype 2 lw 3 lc rgb "#00D317"
+set linetype 3 lw 3 lc rgb "#971c00"
+set linetype 4 lw 3 lc rgb "#000000"
+set linetype cycle 4
 
 set size 1.40,1.30
 set border linewidth 1.5
 
 set logscale y
 set format y "10^{%L}"
-set xrange [2006.4:2021.6]
+set xrange [2006.4:2023.6]
 set key samplen 6 spacing 3.0
 set key bottom right
 set grid lw 3
@@ -80,7 +80,7 @@ plot 'data-intel.txt'     using 1:2 with linesp pt 9 ps 3.0 title "INTEL Xeon CP
      'data-amd.txt'       using 1:2 with linesp pt 7 ps 3.0 title "AMD Radeon GPUs", \
      'data-intel-phi.txt' using 1:2 with linesp pt 11 ps 3.0 title "INTEL Xeon Phis"
 
-set yrange [30:55000]
+set yrange [30:75000]
 set output "gflops-dp.eps"
 set title "Theoretical Peak Performance, Double Precision"
 
@@ -100,6 +100,7 @@ set label "FirePro S9150"   at 2015,4000 center rotate by 40 textcolor rgb "#971
 set label "MI25"            at 2016,425 center rotate by 40 textcolor rgb "#971c00"
 set label "MI60"            at 2018,9000 center rotate by 00 textcolor rgb "#971c00"
 set label "MI250"           at 2021,32000 center rotate by 40 textcolor rgb "#971c00"
+set label "MI300"           at 2023,40000 center rotate by 40 textcolor rgb "#971c00"
 
 # Labels Intel
 set label "X5482"         at 2007,40  center rotate by 40 textcolor rgb "#005197"
@@ -112,7 +113,7 @@ set label "E5-2697 v2"    at 2013,180 center rotate by 40 textcolor rgb "#005197
 set label "E5-2699 v3"    at 2014,450 center rotate by 40 textcolor rgb "#005197"
 set label "E5-2699 v3"    at 2015,450 center rotate by 40 textcolor rgb "#005197"
 set label "E5-2699 v4"    at 2016,550 center rotate by 40 textcolor rgb "#005197"
-set label "Platinum 8180" at 2017,1650 center rotate by 40 textcolor rgb "#005197"
+set label "Platinum 8180" at 2017,1500 center rotate by 40 textcolor rgb "#005197"
 set label "Platinum 9282" at 2018,3200 center rotate by 40 textcolor rgb "#005197"
 set label "Platinum 8380HL" at 2020,2000 center rotate by 0 textcolor rgb "#005197"
 set label "Platinum 8380" at 2021,3900 center rotate by 0 textcolor rgb "#005197"
@@ -120,8 +121,8 @@ set label "Platinum 8380" at 2021,3900 center rotate by 0 textcolor rgb "#005197
 # Labels NVIDIA
 set label "Tesla C1060"  at 2008,130 center rotate by 40 textcolor rgb "#00D317"
 set label "Tesla C1060"  at 2009,160 center rotate by 40 textcolor rgb "#00D317"
-set label "Tesla C2050"  at 2010,260 center rotate by 40 textcolor rgb "#00D317"
-set label "Tesla M2090"  at 2011,450 center rotate by 40 textcolor rgb "#00D317"
+set label "Tesla C2050"  at 2010,220 center rotate by 40 textcolor rgb "#00D317"
+set label "Tesla M2090"  at 2011,480 center rotate by 40 textcolor rgb "#00D317"
 set label "Tesla K20"    at 2012,1700 center rotate by 40 textcolor rgb "#00D317"
 set label "Tesla K20X"   at 2013,1900 center rotate by 40 textcolor rgb "#00D317"
 set label "Tesla K40"    at 2014,1900 center rotate by 40 textcolor rgb "#00D317"
@@ -129,6 +130,7 @@ set label "Tesla K40"    at 2015,2000 center rotate by 40 textcolor rgb "#00D317
 set label "Tesla P100"   at 2016,7000 center rotate by 40 textcolor rgb "#00D317"
 set label "Tesla V100"   at 2017,4900 center rotate by 40 textcolor rgb "#00D317"
 set label "Tesla A100"   at 2020,6000 center rotate by 40 textcolor rgb "#00D317"
+set label "Tesla H100"   at 2022,14000 center rotate by 40 textcolor rgb "#00D317"
 # Labels Xeon Phi
 set label "Xeon Phi 7120 (KNC)" at 2014.3,920 center rotate by 00
 set label "Xeon Phi 7290 (KNL)" at 2016,2700 center rotate by 50

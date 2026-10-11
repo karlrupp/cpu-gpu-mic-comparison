@@ -3,18 +3,18 @@
 set term postscript eps enhanced color
 
 set style data lines
-set style line 1  linetype -1 linewidth 3 lc rgb "#005197"
-set style line 2  linetype -1 linewidth 3 lc rgb "#00D317"
-set style line 3  linetype -1 linewidth 3 lc rgb "#971c00"
-set style line 4  linetype -1 linewidth 3 lc rgb "#000000"
-set style increment user
+set linetype 1 lw 3 lc rgb "#005197"
+set linetype 2 lw 3 lc rgb "#00D317"
+set linetype 3 lw 3 lc rgb "#971c00"
+set linetype 4 lw 3 lc rgb "#000000"
+set linetype cycle 4
 
 set size 1.40,1.30
 set border linewidth 1.5
 
 set logscale y
 set format y "10^{%L}"
-set xrange [2006.4:2021.6]
+set xrange [2006.4:2023.6]
 set key samplen 6 spacing 3.0
 set key bottom right
 set grid lw 3

@@ -3,17 +3,23 @@
 set term postscript eps enhanced color
 
 set style data lines
-set style line 1  linetype -1 linewidth 3 lc rgb "#005197"
-set style line 2  linetype -1 linewidth 3 lc rgb "#00D317"
-set style line 3  linetype -1 linewidth 3 lc rgb "#971c00"
-set style line 4  linetype -1 linewidth 3 lc rgb "#000000"
-set style increment user
+set linetype 1 lw 3 lc rgb "#005197"
+set linetype 2 lw 3 lc rgb "#00D317"
+set linetype 3 lw 3 lc rgb "#971c00"
+set linetype 4 lw 3 lc rgb "#000000"
+set linetype cycle 4
+
+#set style line 1  linetype -1 linewidth 3 lc rgb "#005197"
+#set style line 2  linetype -1 linewidth 3 lc rgb "#00D317"
+#set style line 3  linetype -1 linewidth 3 lc rgb "#971c00"
+#set style line 4  linetype -1 linewidth 3 lc rgb "#000000"
+#set style increment user
 
 set size 1.40,1.30
 set border linewidth 1.5
 
 set logscale y
-set xrange [2006.4:2021.6]
+set xrange [2006.4:2023.6]
 set key samplen 6 spacing 3.0
 set key bottom right
 set grid lw 3
@@ -82,6 +88,7 @@ plot 'data-intel.txt'     using 1:($2/$5)           with linesp pt  9 ps 3.0 tit
      'data-intel-phi.txt' using 1:($2/$5)           with linesp pt 11 ps 3.0 title "INTEL Xeon Phis"
 
 set yrange [0.5:30]
+set ytics 1,2,30
 set output "flop-per-byte-dp.eps"
 set title "Theoretical Peak Floating Point Operations per Byte, Double Precision"
 
@@ -99,7 +106,8 @@ set label "FirePro W9100"   at 2014,12  center rotate by 30 textcolor rgb "#971c
 set label "FirePro S9150"   at 2015,13  center rotate by 30 textcolor rgb "#971c00"
 set label "MI25"            at 2016,1.5  center rotate by 30 textcolor rgb "#971c00"
 set label "MI60"            at 2018,9  center rotate by 30 textcolor rgb "#971c00"
-set label "MI250"           at 2021,11 center rotate by 30 textcolor rgb "#971c00"
+set label "MI250"           at 2021,12 center rotate by 30 textcolor rgb "#971c00"
+set label "MI300"           at 2023,14 center rotate by 30 textcolor rgb "#971c00"
 
 
 # Labels Intel
@@ -129,7 +137,8 @@ set label "Tesla K40"    at 2014,4 center rotate by 30 textcolor rgb "#00D317"
 set label "Tesla K40"    at 2015,4 center rotate by 30 textcolor rgb "#00D317"
 set label "Tesla P100"   at 2016,8 center rotate by 30 textcolor rgb "#00D317"
 set label "Tesla V100"   at 2017,10.5 center rotate by 30 textcolor rgb "#00D317"
-set label "Tesla A100"   at 2020,7.3 center rotate by 0 textcolor rgb "#00D317"
+set label "Tesla A100"   at 2020,7.3 center rotate by 30 textcolor rgb "#00D317"
+set label "Tesla H100"   at 2022,10 center rotate by 30 textcolor rgb "#00D317"
 
 # Labels Xeon Phi
 set label "Xeon Phi 7120 (KNC)" at 2014.4,6 center rotate by 00
